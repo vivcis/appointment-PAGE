@@ -1,0 +1,122 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+ /*   navbar styling*/
+.nav .navbar-expand-md .navbar-dark {
+  background: linear-gradient(90.47deg, #3d63ec 0%, #2d57ee 100%) !important;
+}
+.app-nav .nav-link {
+  border-right: 2px solid #fff;
+  color: #fff !important;
+}
+.top-section {
+  background: linear-gradient(90.47deg, #3d63ec 0%, #2d57ee 100%);
+  z-index: 1;
+}
+.bottom-section {
+  background-color: #ffffff;
+}
+h4 {
+  color: #1e90ff;
+  margin-top: 20px;
+}
+    
+ /*   form styling*/
+#contain form {
+  background: linear-gradient(90.47deg, #3d63ec 0%, #2d57ee 100%);
+  border-radius: 25px;
+  padding: 15px;
+}
+div .wrapper {
+  color: #ffffff;
+}
+#userName div input {
+  border-radius: 25px;
+}
+button {
+  color: #1e90ff;
+}
+a:link {
+  text-decoration: none;
+  color: #fff;
+}
+div .pic1 {
+  margin-top: -110px;
+}
+form #contain {
+  width: 50px;
+}
+.form1 input {
+  border-radius: 20px;
+}
+button[type="button"] {
+  border-radius: 15px;
+}
+.bg-primary {
+  background: linear-gradient(90.47deg, #3d63ec 0%, #2d57ee 100%);
+}
+
+/*styling of the circles by the edges*/
+#first-circle::before {
+  height: 150px;
+  width: 150px;
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  background-color: rgb(156, 212, 238);
+  position: absolute;
+  bottom: -100px;
+  left: -120px;
+}
+#first-circle > .row {
+  position: relative;
+  z-index: 1;
+}
+#first-circle::after {
+  height: 150px;
+  width: 150px;
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  background-color: rgb(156, 212, 238);
+  position: absolute;
+  right: 0;
+  top: -50px;
+}
+
+#contain form::before {
+  height: 150px;
+  width: 150px;
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  background-color: rgb(156, 212, 238);
+  position: absolute;
+  bottom: -100px;
+  right: -120px;
+}
+
+/*page responsiveness*/
+@media screen and (max-width: 991px) {
+  .bottom-section #btr {
+    display: block !important;
+  }
+  .bottom-section #btr > * {
+    max-width: 100% !important;
+  }
+}
+
+@media screen and(max-width: 768px) {
+  p div {
+    display: center;
+  }
+  div .center-image {
+    margin: auto;
+    display: block;
+    align-items: justify-content;
+  }
+}
